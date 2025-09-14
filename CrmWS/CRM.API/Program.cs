@@ -61,7 +61,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
 builder.Services.AddScoped<IOpportunityRepository, OpportunityRepository>();
-builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+builder.Services.AddScoped<ICrmTaskRepository, CrmTaskRepository>();
 builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 
 // Business Services
@@ -70,7 +70,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<IOpportunityService, OpportunityService>();
-builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddScoped<ICrmTaskService, CrmTaskService>();
 builder.Services.AddScoped<IActivityService, ActivityService>();
 
 // Swagger/OpenAPI
