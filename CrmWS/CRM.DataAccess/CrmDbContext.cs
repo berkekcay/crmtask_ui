@@ -164,6 +164,10 @@ namespace CRM.DataAccess
             modelBuilder.Entity<Company>()
                 .HasIndex(c => c.Name);
 
+            modelBuilder.Entity<Company>()
+                .Property(c => c.AnnualRevenue)
+                .HasColumnType("decimal(18,2)");
+
             modelBuilder.Entity<Contact>()
                 .HasIndex(c => c.Email);
 
